@@ -1,0 +1,125 @@
+.app {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100vw;
+  padding: 40px;
+}
+
+.viewed-list {
+  flex: 1;
+  background-color: #e9f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 300px;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.1);
+}
+
+.movie-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #005ad1;
+}
+
+.movie-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 400px;
+}
+
+.movie-poster {
+  width: auto;
+  height: 320px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: left;
+  color: #555;
+  margin: 5px 0;
+}
+
+.clickable {
+  color: #0077ff;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+.ban-list {
+  flex: 1;
+  background-color: #fff3f3;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+  max-width: 400px;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
+}
+
+.ban-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ban-list li {
+  background: #ffcccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ban-list li:hover {
+  background: #ffaaaa;
+}
