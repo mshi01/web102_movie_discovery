@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 const API_KEY = "ad832014"
@@ -8,7 +8,7 @@ function App() {
   const [bannedList, setBannedList] = useState([])
   const [viewedList, setViewedList] = useState([])
 
-  const keywords = ["child", "love", "man", "war", "girl", "humor", "cartoon", "life"];
+  const keywords = ["comedy", "love", "man", "war", "classic", "kids", "cartoon", "life"];
 
   const getRandomMovie = async () => {
     let data = null;
@@ -65,6 +65,10 @@ function App() {
   const handleUnban = (value) => {
     setBannedList(bannedList.filter((v) => v !== value));
   };
+
+  useEffect(() => {
+    getRandomMovie(); 
+  }, []);
 
   return (
     <div className="app">
