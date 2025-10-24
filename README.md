@@ -3,6 +3,7 @@
 Submitted by: **Mingzhu Shi**
 
 This web app: **Discover The Movie You'll Like**
+- Fetch and display movie info from OMDb API, users can ban/unban movies from certain categories from displayed, a history view lists of movie infor is also listed.
 
 Time spent: **8** hours spent in total
 
